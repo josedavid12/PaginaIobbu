@@ -1,0 +1,92 @@
+body
+{
+  margin:0;
+  width: 100%;
+}
+*
+{
+  box-sizing: border-box;
+}
+
+/*estilos de header*/
+.header-containter
+{
+  display: flex;
+  flex-direction: row;
+  padding: 0 5vw;
+  box-shadow: 0 1px 10px -6px rgba(0,0,0,0.42),
+              0 1px 10px 0 rgba(0,0,0,0.12),
+              0 4px 5px -2px rgba(0,0,0,0.1);
+}
+.header-containter img
+{
+  width: 30%;
+}
+.header-containter nav
+{
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+.header-containter nav a
+{
+  font-size: 3vw;
+  padding: 0 1vw;
+  text-decoration: none;
+  color: #555555;
+  font-family: 'Mada', sans-serif;
+}
+
+/*estilos de la seccion 1*/
+.seccion1
+{
+  background: #F3F2F2;
+  width: 100%;
+  padding: 10vw 5vw;
+}
+.seccion1 img
+{
+  width: 100%;
+}
+.seccion1_titulo
+{
+  font-family: 'M PLUS 1p', sans-serif;
+  font-size: 2.5em;
+  margin: 0;
+  color: #7980FB;
+  text-align: center;
+}
+.seccion1_texto
+{
+  font-family: 'Mada', sans-serif;
+  font-size: 1em;
+  color:#3C4858;
+  text-align: center;
+}
+.seccion1_botones
+{
+  display: flex;
+  flex-direction: column;
+}
+.seccion1_botones a
+{
+  width: 100%;
+  text-align: center;
+  margin: 2vw 0;
+  padding: 3vw;
+  font-family: 'Mada', sans-serif;
+  text-decoration: none;
+  color: #3C4858;
+  background: #FFCD40;
+  border-radius: 7vw;
+}
+/*
+.seccion1 div:last-child
+{
+  margin: vw 0;
+  text-decoration: none;
+  text-align: center;
+  color: red;
+}
