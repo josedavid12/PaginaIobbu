@@ -42,6 +42,8 @@ body
   text-decoration: none;
   color: #555555;
   font-family: 'Mada', sans-serif;
+  transition-duration: 500ms;
+  transition-property: color;
 }
 .header-containter nav a:hover
 {
@@ -99,6 +101,13 @@ body
   color: white;
   background: #FFCD40;
   border-radius: 7vw;
+  transition: 500ms all;
+  z-index: 1;
+}
+#boton1:hover
+{
+  background: #7980FB;
+  transform: scale(1.1);
 }
 #boton2
 {
@@ -112,18 +121,27 @@ body
   color: #ABABAB;
   border-radius: 7vw;
   border: 1px solid #ABABAB;
+  transition:500ms all;
+  }
+  #boton2:hover
+  {
+    border:1px solid #FFCD40;
+    background: #FFF1C8;
+    color: #FFCD40;
+    transform: scale(1.1);
   }
 .seccion1 a
 {
   font-family: 'Mada', sans-serif;
   color: #ABABAB;
   text-decoration: none;
+  transition-duration: 500ms;
+  transition-property: color;
 }
 .seccion1 a:hover
 {
   color: #FFCD40;
 }
-
 
 /*estilos de la seccion 2*/
 .seccion2
@@ -166,6 +184,11 @@ body
   padding-top: 1vw;
   text-decoration: none;
   color: #8B8FD1;
+  transition: 500ms color;
+}
+.seccion2_botones a:hover
+{
+  color: #B7BAE4;
 }
 
 /*estilos de la seccion 3*/
@@ -190,6 +213,19 @@ body
   display: flex;
   flex-direction: row;
   margin: 5vw 0;
+  animation: 1s "slideInLeft"; 
+}
+@-webkit-keyframes slideInLeft {
+  from {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
 }
 .img
 {
@@ -293,6 +329,13 @@ body
   color: #7A7A7A;
   background: #FFCD40;
   border-radius: 7vw;
+  transition: 500ms all;
+}
+#boton3:hover
+{
+  background: #7980FB;
+  transform: scale(1.1);
+  color: white;
 }
 #boton4
 {
@@ -306,6 +349,14 @@ body
   color: #7A7A7A;
   border-radius: 7vw;
   border: 1px solid #ABABAB;
+  transition: 500ms all;
+  }
+  #boton4:hover
+  {
+    background: #9B976F;
+    color: #FFCD40;
+    border: 1px solid #FFCD40;
+    transform: scale(1.1);
   }
 
 /*footer*/
